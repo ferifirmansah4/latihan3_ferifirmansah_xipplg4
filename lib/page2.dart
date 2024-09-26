@@ -7,7 +7,7 @@ class page2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text('ini halaman 2'),
+        child: Text('ini adalah halaman 2'),
       ),
     );
   }
