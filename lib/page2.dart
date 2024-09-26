@@ -1,14 +1,47 @@
 import 'package:flutter/material.dart';
 
 class page2 extends StatelessWidget {
-  const page2({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MaterialApp(
+        home: Scaffold(
+      appBar: AppBar(
+        title: Text(''),
+      ), // AppBar
       body: Center(
-        child: Text('ini adalah halaman 2'),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.red,
+                ),
+                Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.green,
+                )
+              ],
+            ),
+            Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.blue,
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.amber,
+              )
+            ])
+          ],
+        ),
       ),
-    );
+    ));
   }
 }
